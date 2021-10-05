@@ -76,7 +76,6 @@ public class Main {
         }
     }
 
-
     public static void main(String[] args){
         //use this for 2d signup and signin
         //signupandsignin2d();
@@ -88,11 +87,27 @@ public class Main {
 //        obj3.data="data3";
 //        obj1.display();
 
+        //sample for 3d arrays
+//        threeda thobj=new threeda();
+//        thobj.adddata();
+//        thobj.display();
 
 
+        // for grid game
+        // gridgame game=new gridgame();
 
 
+// for project euler first problem
+//        projecteuler1 problem1=new projecteuler1();
 
+// for project euler 2nd problem
+//        projecteuler2 problem2=new projecteuler2();
+
+//// for project euler 4th problem
+//        projecteuler4 problem4=new projecteuler4();
+
+// for project euler 5th problem
+        projecteuler5 problem5=new projecteuler5();
 
 
 
