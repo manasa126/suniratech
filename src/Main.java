@@ -1,6 +1,109 @@
 import java.util.Scanner;
 public class Main {
+    //signup and signin using 2s arrays
+    public static void signupandsignin2d(){
+        String[][] users=new String[10][3];
+        int index=0;
+        Scanner input=new Scanner(System.in);
+        while(true){
+            if(index>9){
+                System.out.println("terminating as memory limit reached");
+                break;
+            }
+
+            System.out.println("enter s for signup any other for login");
+            String option=input.next();
+            if(option.equals("s")){
+                String username,password ,data;
+                System.out.println("Enter username");
+                username=input.next();
+                boolean flag=false;
+                for(String[] user:users){
+                    if(user[0] != null){
+                        if(user[0].equals(username)){
+                            flag=true;
+                            break;
+                        }
+                    }
+                }
+                if(flag){
+                    System.out.println("user already exist go for signin");
+                }else{
+                    System.out.println("Enter password");
+                    password=input.next();
+                    System.out.println("enter some data");
+                    data=input.next();
+                    users[index][0]=username;
+                    users[index][1]=password;
+                    users[index][2]=data;
+                    index++;
+                }
+
+
+
+
+            }
+            else{
+                String username,password,data;
+                System.out.println("Enter username");
+                username=input.next();
+                System.out.println("Enter password");
+                password=input.next();
+                boolean flag=true;
+                for(String[] user:users){
+                    if(username.equals(user[0])){
+                        flag=false;
+                        if(password.equals(user[1])){
+                            System.out.println("data is :"+user[2]);
+                        }
+                        else{
+                            System.out.println("wrong password");
+                        }
+                    }
+                }
+                if(flag){
+                    System.out.println("user not found");
+                }
+
+            }
+            System.out.println("Enter q to quit any other to continue");
+            option=input.next();
+            if(option.equals("q")){
+                break;
+            }
+
+
+        }
+    }
+
+
     public static void main(String[] args){
+        //use this for 2d signup and signin
+        //signupandsignin2d();
+//        samplemethods obj1=new samplemethods();
+//        obj1.data="data1";
+//        samplemethods obj2=new samplemethods();
+//        obj2.data="data2";
+//        samplemethods obj3=new samplemethods();
+//        obj3.data="data3";
+//        obj1.display();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         //sample 2d string array
 //        String[][] usercredentails={{"Eswar","Eswar123"},{"anjali","hai"}};
