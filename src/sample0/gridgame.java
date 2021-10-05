@@ -1,3 +1,5 @@
+package sample0;
+
 import java.util.Scanner;
 
 public class gridgame {
@@ -39,23 +41,13 @@ public class gridgame {
             }
         System.out.println("u,d,r,l");
         String option=input.next();
-        switch(option){
-            case "u":
-                r--;
-                break;
-            case "d":
-                r++;
-                break;
-            case "r":
-                c++;
-                break;
-            case "l":
-                c--;
-                break;
-            default:
-                System.out.println("invalid input");
-                break;
-        }
+            switch (option) {
+                case "u" -> r--;
+                case "d" -> r++;
+                case "r" -> c++;
+                case "l" -> c--;
+                default -> System.out.println("invalid input");
+            }
 
 
         }

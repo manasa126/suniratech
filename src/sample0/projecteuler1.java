@@ -1,6 +1,8 @@
+package sample0;
+
 public class projecteuler1 {
     int result=0;
-    projecteuler1(){
+    public projecteuler1(){
         for(int i=1;i<1000;i++){
             if(i%3==0 || i%5==0){
                 //result+=result+i;

@@ -1,3 +1,5 @@
+package sample0;
+
 public class projecteuler2 {
     projecteuler2(){
         int f=1,s=2,r,result;

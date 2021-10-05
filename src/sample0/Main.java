@@ -1,3 +1,5 @@
+package sample0;
+
 import java.util.Scanner;
 public class Main {
     //signup and signin using 2s arrays
@@ -79,38 +81,40 @@ public class Main {
     public static void main(String[] args){
         //use this for 2d signup and signin
         //signupandsignin2d();
-//        samplemethods obj1=new samplemethods();
+//        sample0.samplemethods obj1=new sample0.samplemethods();
 //        obj1.data="data1";
-//        samplemethods obj2=new samplemethods();
+//        sample0.samplemethods obj2=new sample0.samplemethods();
 //        obj2.data="data2";
-//        samplemethods obj3=new samplemethods();
+//        sample0.samplemethods obj3=new sample0.samplemethods();
 //        obj3.data="data3";
 //        obj1.display();
 
         //sample for 3d arrays
-//        threeda thobj=new threeda();
+//        sample0.threeda thobj=new sample0.threeda();
 //        thobj.adddata();
 //        thobj.display();
 
 
         // for grid game
-        // gridgame game=new gridgame();
+        // sample0.gridgame game=new sample0.gridgame();
 
 
 // for project euler first problem
-//        projecteuler1 problem1=new projecteuler1();
+//        sample0.projecteuler1 problem1=new sample0.projecteuler1();
 
 // for project euler 2nd problem
-//        projecteuler2 problem2=new projecteuler2();
+//        sample0.projecteuler2 problem2=new sample0.projecteuler2();
 
 //// for project euler 4th problem
-//        projecteuler4 problem4=new projecteuler4();
+//        sample0.projecteuler4 problem4=new sample0.projecteuler4();
 
-// for project euler 5th problem
-        projecteuler5 problem5=new projecteuler5();
+//// for project euler 5th problem
+//        sample0.projecteuler5 problem5=new sample0.projecteuler5();
 
-
-
+        Methodoverloading objme1=new Methodoverloading("Eswar","mad");
+        Methodoverloading objme2=new Methodoverloading("Anjali");
+        objme2.display(objme2.name);
+        objme1.display(objme1.data,objme1.role);
 
 
 
@@ -449,4 +453,6 @@ while(){
 //        int experience=input.nextInt();
 //        System.out.println(name + " "+ role + "  "+experience);
     }
+
+
 }
