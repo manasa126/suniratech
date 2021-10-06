@@ -22,9 +22,6 @@ public class auth extends signup{
                 default -> System.out.println("invalid input");
             }
 
-
-
-
             System.out.println("Enter q to quit anyother to continue");
 
         }while(!input.next().equals("q"));
