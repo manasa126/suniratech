@@ -67,7 +67,7 @@ public class Home extends Main {
         //file handling
         String filename="readme.txt";
         createfile(filename);
-//        writetofile(filename);
+//        writetofile(filename);  //to write data to a file
         readfromfile(filename);
 
 
