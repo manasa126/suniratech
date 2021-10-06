@@ -4,9 +4,12 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Home extends Main {
+
+
     private static void createfile(String filename){
         File file=new File(filename);
         try {
@@ -69,6 +72,18 @@ public class Home extends Main {
         createfile(filename);
 //        writetofile(filename);  //to write data to a file
         readfromfile(filename);
+        Scanner input=new Scanner(System.in);
+
+//        ArrayList<String> array=new ArrayList<>();
+//        for(int i=0;i<5;i++){
+//            System.out.print("enter data:");
+//            array.add(input.nextLine());
+//            System.out.println();
+//        }
+//        for(int i=0;i<array.size();i++){
+//
+//            System.out.println(array.get(i));
+//        }
 
 
 
