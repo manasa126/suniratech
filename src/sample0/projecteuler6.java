@@ -12,6 +12,5 @@ public class projecteuler6 {
         sumsquare=(n*(n+1))/2;
         squaresum=(n*(n+1)*(2*n+1))/6;
         System.out.println((sumsquare*sumsquare)-squaresum);
-
     }
 }
